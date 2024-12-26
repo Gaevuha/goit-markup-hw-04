@@ -181,7 +181,9 @@ letter-spacing: 0.02em;
     color: var(--color-pressed-state);
 }
 
-
+.link.current {
+    color: #404bbf;
+}
 
 .link {
     color: var(--color-darck);
@@ -256,7 +258,7 @@ letter-spacing: 0.02em;
     border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .hero-button:hover,
@@ -346,7 +348,7 @@ background-color: var(--color-pressed-state);
 }
 
 .sociale-icons {
-    fill: var(--color-primary-brand);
+    fill: var(--color-light);
 } 
 
 .icon-link {
@@ -357,7 +359,7 @@ background-color: var(--color-pressed-state);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-link:hover,
@@ -459,8 +461,13 @@ color: var(--color-primary-brand);
     margin-bottom: 16px;
 }
 
-.foter-list-sociale .icon-link:hover {
+.foter-list-sociale .icon-link:hover,
+.foter-list-sociale .icon-link:focus {
     background-color: var(--color-success);
+}
+
+.footer-icons {
+    fill: var(--color-light);
 }
 
 .sales-text-footer {
